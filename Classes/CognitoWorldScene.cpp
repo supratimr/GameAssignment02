@@ -295,6 +295,9 @@ bool CognitoWorld::onContactBegan(PhysicsContact &contact)
 
 bool CognitoWorld::onTouchBeganBlue(Touch *touch, Event *unused_event)
 {
+    if(blueDisc->getPositionY() != visibleSize.height * 0.75)
+        return false;
+    
     // 1
     auto node = unused_event->getCurrentTarget();
     // 2
@@ -355,11 +358,14 @@ void CognitoWorld::onTouchEndGreen(Touch *touch, Event *unused_event)
             Sprite* obstacle = standingObstacles.at(idx);
             obstacle->stopAllActions();
         }
-    
-        auto actionJump = JumpBy::create(1.0f, Vec2(lvlConfigData.at("GreenJumpXRange").asFloat(), 0), lvlConfigData.at("GreenJumpHeight").asFloat(), 1);
-        node->runAction(actionJump);
         
-        SimpleAudioEngine::getInstance()->playEffect(lvlConfigData.at("GreenJumpSFX").asString().c_str());
+        if(node->getPositionY() == visibleSize.height * 0.25f)
+        {
+            auto actionJump = JumpBy::create(1.0f, Vec2(lvlConfigData.at("GreenJumpXRange").asFloat(), 0), lvlConfigData.at("GreenJumpHeight").asFloat(), 1);
+            node->runAction(actionJump);
+            
+            SimpleAudioEngine::getInstance()->playEffect(lvlConfigData.at("GreenJumpSFX").asString().c_str());
+        }
     }
     
     isGreenTouched = false;
