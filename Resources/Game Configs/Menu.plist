@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StartBtnTexNormal</key>
+	<string>start_normal.png</string>
+	<key>StartBtnTexSel</key>
+	<string>start_selected.png</string>
+	<key>ExitBtnTexNormal</key>
+	<string>close_normal.png</string>
+	<key>ExitBtnTexSel</key>
+	<string>close_selected.png</string>
+	<key>GameName</key>
+	<string>Cognito</string>
+</dict>
+</plist>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EndLine</key>
+	<string>EndLine.png</string>
+	<key>MenuBackNormal</key>
+	<string>menu_normal.png</string>
+	<key>MenuBackSel</key>
+	<string>menu_selected.png</string>
+	<key>GameOverNormal</key>
+	<string>gameover_normal.png</string>
+	<key>GameOverSel</key>
+	<string>gameover_sel.png</string>
+	<key>BluePlayer</key>
+	<string>Blue.png</string>
+	<key>GreenPlayer</key>
+	<string>Green.png</string>
+	<key>BlueObstacle</key>
+	<string>Black.png</string>
+	<key>GreenObstacle</key>
+	<string>Black.png</string>
+	<key>BluePlayerSpeed</key>
+	<string>50.0</string>
+	<key>BlueJumpXRange</key>
+	<string>50.0</string>
+	<key>BlueJumpHeight</key>
+	<string>40.0</string>
+	<key>BlueObstacleSpawnDelay</key>
+	<string>1.5</string>
+	<key>BlueObstacleSpeed</key>
+	<string>100.0</string>
+	<key>GreenObstacleNum</key>
+	<integer>3</integer>
+	<key>GreenObstacleSpeed</key>
+	<string>100.0</string>
+	<key>GreenJumpXRange</key>
+	<string>100.0</string>
+	<key>GreenJumpHeight</key>
+	<string>40.0</string>
+	<key>SetImmortal</key>
+	<false/>
+	<key>BkgMusic</key>
+	<string></string>
+	<key>BlueJumpSFX</key>
+	<string></string>
+	<key>GreenJumpSFX</key>
+	<string></string>
+	<key>BlueCollideSFX</key>
+	<string></string>
+	<key>GreencollideSFX</key>
+	<string></string>
+</dict>
+</plist>
